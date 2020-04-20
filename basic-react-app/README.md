@@ -2,6 +2,7 @@
 # React App quick start ( Without CRA )
 ---
 Author: Susheel Kumar Pogaku
+
 Last Updated: Apr 20, 2020
 ---
 ### Pre-reqs
@@ -87,7 +88,7 @@ To run this code properly in our browser, we'd need [Babel](https://babeljs.io/)
  ```javascript
  ...
 "name": "react-app",
-....
+...
 "main": "index.js",
 "babel": {
     "presets": [

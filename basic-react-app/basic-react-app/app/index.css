@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    height: 100vh;
+    color: white;
+    font-size: 5rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b3e26;
+}

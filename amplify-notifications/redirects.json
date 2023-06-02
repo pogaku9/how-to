@@ -1,0 +1,5 @@
+{
+    "source": "/<*>",
+    "target": "/index.html",
+    "type": "404 (Rewrite)"
+}

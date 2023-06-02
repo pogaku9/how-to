@@ -1,0 +1,12 @@
+{
+    "Amplify": {
+        "AMPLIFY_SKIP_BACKEND_BUILD": "true",
+        "ARTIFACT_S3_BUCKET": "amplify-artifacts-<region>-<account-id>"
+    },
+    "Lambda": {
+        "AMPLIFY_APP_ID": "",
+        "AMPLIFY_APP_REGION": "us-west-1",
+        "CUSTOM_DOMAIN": "abcd.com",
+        "SLACK_WEBHOOK": "https://slack-app-webhook-url"
+    }
+}

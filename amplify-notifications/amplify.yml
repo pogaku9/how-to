@@ -1,0 +1,21 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        # - create environment variable for s3 bucket, get pre-packaged zip file from s3 bucket for deployment
+        - aws s3api get-object --bucket ${ARTIFACT_S3_BUCKET} --key Archive.zip ./Archive.zip
+        # - make anu modifications before deployment
+        - mkdir -p public/customization
+        - unzip Archive.zip -d public
+        - cp -rf customization/* public/customization
+        - cp -f customization/customConfig.json public/
+    build:
+      commands:
+        # - verify if all files are copied properly
+        - ls -alR public/customization
+        - cat public/customConfig.json
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
